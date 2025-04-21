@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Riwayat Engagement</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Riwayat Perhitungan Engagement Rate</h2>
+    <div>
+        {{ tables[0]|safe }}
+    </div>
+    <a href="/">Kembali ke Kalkulator</a>
+</body>
+</html>

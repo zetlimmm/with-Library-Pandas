@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasil CSV - Engagement Rate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: black;
+            font-size: 30px;
+        }
+        h2 {
+            color: hotpink;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid gray;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        a {
+            margin-top: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hasil Analisis CSV: Engagement Rate</h1>
+    <h2>Data yang Dihitung:</h2>
+
+    {{ table | safe }}
+
+    <a href="{{ url_for('index') }}">← Kembali ke Kalkulasi Manual</a>
+</body>
+</html>
