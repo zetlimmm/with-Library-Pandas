@@ -20,9 +20,9 @@ def index():
 
             # Validasi nilai tidak boleh negatif
             if min(likes, comments, shares, followers) < 0:
-                error_msg = "Nilai tidak boleh negatif!"
+                error_msg = "Nilai yang takasih masuk nda boleh Negatif, PAHAM!"
             elif followers == 0:
-                error_msg = "Jumlah followers tidak boleh 0!"
+                error_msg = "Jumlah followersta nda boleh 0 bosku, kayak tong akun baru"
             else:
                 # Hitung engagement rate
                 er = round(((likes + comments + shares) / followers) * 100, 2)
@@ -44,7 +44,7 @@ def index():
                 )
 
         except ValueError:
-            error_msg = "Input tidak valid! Masukkan angka yang benar."
+            error_msg = "yang ta Input nda VALID bosku, masukkan angka yang benar, PAHAM!"
 
     return render_template("index.html", er=er, error_msg=error_msg)
 
